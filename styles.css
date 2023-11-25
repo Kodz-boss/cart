@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 510px;
+    height: fit-content;
+    padding-bottom: 20px;
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 5px, 2px, 5px, white;
+}
+
+input{
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    background-color: white;
+    padding-left: 10px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    font-weight: 700;
+}
+
+.addeditems{
+    font-size: 24px;
+    font-weight: bolder;
+    color: darkgreen;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.colm{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxholder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.box{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        position: absolute;
+        left: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: fit-content;
+        padding-bottom: 20px;
+        background-color: grey;
+        border-radius: 20px;
+        box-shadow: 5px, 2px, 5px, white;
+    }
+
+    .addeditems{
+        margin-top: 40px;
+    }
+
+    button{
+        margin-left: 35%;
+    }
+}
